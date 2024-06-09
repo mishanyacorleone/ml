@@ -6,8 +6,8 @@ import numpy as np
 
 
 def load_model():
-    with open('model.pkl', 'rb') as f:
-        model_ = pickle.load(f)
+    with open('model.pkl', 'rb') as file:
+        model_ = pickle.load(file)
     return model_
 
 
