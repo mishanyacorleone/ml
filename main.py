@@ -1,6 +1,7 @@
 import streamlit as st
 from pickle import load
 import numpy as np
+import sklearn
 
 # Загрузка модели
 
