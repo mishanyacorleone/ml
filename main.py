@@ -1,13 +1,13 @@
 import streamlit as st
 import pickle
-import joblib
 import numpy as np
 
 # Загрузка модели
 
 
 def load_model():
-    model_ = joblib.load('model.pkl')
+    with open('model.pkl', 'rb') as file:
+        model_ = pickle.load(file)
     return model_
 
 
