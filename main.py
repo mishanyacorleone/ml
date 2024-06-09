@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+from pickle import load
 import numpy as np
 
 # Загрузка модели
@@ -7,7 +7,7 @@ import numpy as np
 
 def load_model():
     with open('model.pkl', 'rb') as file:
-        model_ = pickle.load(file)
+        model_ = load(file)
     return model_
 
 
